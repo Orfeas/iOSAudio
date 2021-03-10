@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3C416E25EB8CDA001161D7 /* Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C416D25EB8CDA001161D7 /* Transcription.swift */; };
+		1E3C417325EB90AD001161D7 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C417225EB90AD001161D7 /* RecordViewModel.swift */; };
+		1E3C418A25EBA927001161D7 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C418925EBA927001161D7 /* TextToSpeechService.swift */; };
+		1E3C424125EBD5AE001161D7 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C424025EBD5AE001161D7 /* BaseOperation.swift */; };
+		1E3C424A25EBDAB6001161D7 /* GoogleAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C424925EBDAB6001161D7 /* GoogleAPIServices.swift */; };
+		1E3C425225EBDB3E001161D7 /* AudioFromText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C425125EBDB3E001161D7 /* AudioFromText.swift */; };
+		1E3C425A25EBDBAA001161D7 /* TimePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C425925EBDBAA001161D7 /* TimePoint.swift */; };
+		1E3C426025EBDC05001161D7 /* GetAudioFromTextOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C425F25EBDC05001161D7 /* GetAudioFromTextOperation.swift */; };
+		1E3C427525EC00F0001161D7 /* TextWithAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C427425EC00F0001161D7 /* TextWithAttributedString.swift */; };
+		1EB79CCD25EAC4D100E47FA9 /* iOSAudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CCC25EAC4D100E47FA9 /* iOSAudioApp.swift */; };
+		1EB79CCF25EAC4D100E47FA9 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CCE25EAC4D100E47FA9 /* RecordView.swift */; };
+		1EB79CD125EAC4D200E47FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB79CD025EAC4D200E47FA9 /* Assets.xcassets */; };
+		1EB79CD425EAC4D200E47FA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB79CD325EAC4D200E47FA9 /* Preview Assets.xcassets */; };
+		1EB79CE425EAC4D200E47FA9 /* iOSAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CE325EAC4D200E47FA9 /* iOSAudioTests.swift */; };
+		1EB79CEF25EAC4D200E47FA9 /* iOSAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CEE25EAC4D200E47FA9 /* iOSAudioUITests.swift */; };
+		1EB79D0025EAC4E300E47FA9 /* ActionButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CFF25EAC4E300E47FA9 /* ActionButtonModifier.swift */; };
+		1EB79E1D25EAFF2000E47FA9 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79DEE25EAFF2000E47FA9 /* AudioController.swift */; };
+		1EB79E3625EAFF2000E47FA9 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79E1B25EAFF2000E47FA9 /* SpeechRecognitionService.swift */; };
+		1EB79E5D25EB057D00E47FA9 /* GoogleSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79E5C25EB057D00E47FA9 /* GoogleSpeechManager.swift */; };
+		5083940E66A7DA87EC2F5672 /* Pods_iOSAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E62AEEDD232B7A3E5E27107 /* Pods_iOSAudio.framework */; };
+		B21276CFE15C4D123CA9CF40 /* Pods_iOSAudio_iOSAudioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1D14575398CF3324A92392 /* Pods_iOSAudio_iOSAudioUITests.framework */; };
+		C41ABAA609EF5C2639549D8A /* Pods_iOSAudioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D071D0A3683A52C4D507B2 /* Pods_iOSAudioTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EB79CE025EAC4D200E47FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EB79CC125EAC4D100E47FA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EB79CC825EAC4D100E47FA9;
+			remoteInfo = iOSAudio;
+		};
+		1EB79CEB25EAC4D200E47FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EB79CC125EAC4D100E47FA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EB79CC825EAC4D100E47FA9;
+			remoteInfo = iOSAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AA82F8FBB340C3AD58C8F9 /* Pods-iOSAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudio.release.xcconfig"; path = "Target Support Files/Pods-iOSAudio/Pods-iOSAudio.release.xcconfig"; sourceTree = "<group>"; };
+		08C2CDAB2F3FF9CD43645715 /* Pods-iOSAudio-iOSAudioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudio-iOSAudioUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSAudio-iOSAudioUITests/Pods-iOSAudio-iOSAudioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CE300990C62EFF1D3370F76 /* Pods-iOSAudioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudioTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSAudioTests/Pods-iOSAudioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E3C416D25EB8CDA001161D7 /* Transcription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcription.swift; sourceTree = "<group>"; };
+		1E3C417225EB90AD001161D7 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		1E3C418925EBA927001161D7 /* TextToSpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
+		1E3C424025EBD5AE001161D7 /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		1E3C424925EBDAB6001161D7 /* GoogleAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPIServices.swift; sourceTree = "<group>"; };
+		1E3C425125EBDB3E001161D7 /* AudioFromText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFromText.swift; sourceTree = "<group>"; };
+		1E3C425925EBDBAA001161D7 /* TimePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePoint.swift; sourceTree = "<group>"; };
+		1E3C425F25EBDC05001161D7 /* GetAudioFromTextOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAudioFromTextOperation.swift; sourceTree = "<group>"; };
+		1E3C427425EC00F0001161D7 /* TextWithAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithAttributedString.swift; sourceTree = "<group>"; };
+		1EB79CC925EAC4D100E47FA9 /* iOSAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB79CCC25EAC4D100E47FA9 /* iOSAudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAudioApp.swift; sourceTree = "<group>"; };
+		1EB79CCE25EAC4D100E47FA9 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		1EB79CD025EAC4D200E47FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EB79CD325EAC4D200E47FA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EB79CDA25EAC4D200E47FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB79CDF25EAC4D200E47FA9 /* iOSAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB79CE325EAC4D200E47FA9 /* iOSAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAudioTests.swift; sourceTree = "<group>"; };
+		1EB79CE525EAC4D200E47FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB79CEA25EAC4D200E47FA9 /* iOSAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB79CEE25EAC4D200E47FA9 /* iOSAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAudioUITests.swift; sourceTree = "<group>"; };
+		1EB79CF025EAC4D200E47FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB79CFF25EAC4E300E47FA9 /* ActionButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonModifier.swift; sourceTree = "<group>"; };
+		1EB79D4625EAC65200E47FA9 /* iOSAudio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSAudio-Bridging-Header.h"; sourceTree = "<group>"; };
+		1EB79DEE25EAFF2000E47FA9 /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		1EB79E1B25EAFF2000E47FA9 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		1EB79E5C25EB057D00E47FA9 /* GoogleSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechManager.swift; sourceTree = "<group>"; };
+		66D071D0A3683A52C4D507B2 /* Pods_iOSAudioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAudioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E62AEEDD232B7A3E5E27107 /* Pods_iOSAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE38ADED737DC776DC3224C /* Pods-iOSAudio-iOSAudioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudio-iOSAudioUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSAudio-iOSAudioUITests/Pods-iOSAudio-iOSAudioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1D14575398CF3324A92392 /* Pods_iOSAudio_iOSAudioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAudio_iOSAudioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA42173226945C59A8FD0135 /* Pods-iOSAudioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudioTests.release.xcconfig"; path = "Target Support Files/Pods-iOSAudioTests/Pods-iOSAudioTests.release.xcconfig"; sourceTree = "<group>"; };
+		B744741EF9E17258ED9DC986 /* Pods-iOSAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAudio.debug.xcconfig"; path = "Target Support Files/Pods-iOSAudio/Pods-iOSAudio.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EB79CC625EAC4D100E47FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083940E66A7DA87EC2F5672 /* Pods_iOSAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CDC25EAC4D200E47FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41ABAA609EF5C2639549D8A /* Pods_iOSAudioTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CE725EAC4D200E47FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21276CFE15C4D123CA9CF40 /* Pods_iOSAudio_iOSAudioUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E3C416325EB8BD9001161D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CCE25EAC4D100E47FA9 /* RecordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E3C416425EB8BE9001161D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C417225EB90AD001161D7 /* RecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E3C416525EB8BF0001161D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C428625EC0BA6001161D7 /* Transcription */,
+				1E3C428A25EC0BB0001161D7 /* AudioFromText */,
+				1E3C428E25EC0BC3001161D7 /* TimePoint */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E3C416925EB8C8D001161D7 /* Speech Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79E5C25EB057D00E47FA9 /* GoogleSpeechManager.swift */,
+			);
+			path = "Speech Manager";
+			sourceTree = "<group>";
+		};
+		1E3C417E25EB9B6B001161D7 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CFF25EAC4E300E47FA9 /* ActionButtonModifier.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		1E3C417F25EB9B80001161D7 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C416325EB8BD9001161D7 /* View */,
+				1E3C416425EB8BE9001161D7 /* ViewModel */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		1E3C418325EB9B90001161D7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C417F25EB9B80001161D7 /* Record */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1E3C418725EBA8EF001161D7 /* Google Models */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79DEE25EAFF2000E47FA9 /* AudioController.swift */,
+			);
+			path = "Google Models";
+			sourceTree = "<group>";
+		};
+		1E3C418825EBA917001161D7 /* Google Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C418925EBA927001161D7 /* TextToSpeechService.swift */,
+				1EB79E1B25EAFF2000E47FA9 /* SpeechRecognitionService.swift */,
+			);
+			path = "Google Services";
+			sourceTree = "<group>";
+		};
+		1E3C41B125EBAA01001161D7 /* Google Support Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C418725EBA8EF001161D7 /* Google Models */,
+				1E3C418825EBA917001161D7 /* Google Services */,
+			);
+			path = "Google Support Classes";
+			sourceTree = "<group>";
+		};
+		1E3C421925EBD524001161D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C424025EBD5AE001161D7 /* BaseOperation.swift */,
+				1E3C424825EBDA97001161D7 /* Google Text to Speech */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E3C424825EBDA97001161D7 /* Google Text to Speech */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C424925EBDAB6001161D7 /* GoogleAPIServices.swift */,
+				1E3C425E25EBDBF1001161D7 /* Operations */,
+			);
+			path = "Google Text to Speech";
+			sourceTree = "<group>";
+		};
+		1E3C425E25EBDBF1001161D7 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C425F25EBDC05001161D7 /* GetAudioFromTextOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		1E3C427325EC00DB001161D7 /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C427425EC00F0001161D7 /* TextWithAttributedString.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		1E3C428225EC0B8A001161D7 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C427325EC00DB001161D7 /* Representables */,
+				1E3C417E25EB9B6B001161D7 /* View Modifiers */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		1E3C428625EC0BA6001161D7 /* Transcription */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C416D25EB8CDA001161D7 /* Transcription.swift */,
+			);
+			path = Transcription;
+			sourceTree = "<group>";
+		};
+		1E3C428A25EC0BB0001161D7 /* AudioFromText */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C425125EBDB3E001161D7 /* AudioFromText.swift */,
+			);
+			path = AudioFromText;
+			sourceTree = "<group>";
+		};
+		1E3C428E25EC0BC3001161D7 /* TimePoint */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C425925EBDBAA001161D7 /* TimePoint.swift */,
+			);
+			path = TimePoint;
+			sourceTree = "<group>";
+		};
+		1EB79CC025EAC4D100E47FA9 = {
+			isa = PBXGroup;
+			children = (
+				1EB79CCB25EAC4D100E47FA9 /* iOSAudio */,
+				1EB79CE225EAC4D200E47FA9 /* iOSAudioTests */,
+				1EB79CED25EAC4D200E47FA9 /* iOSAudioUITests */,
+				1EB79CCA25EAC4D100E47FA9 /* Products */,
+				253701BD93417279FF288C98 /* Pods */,
+				469D956F587AD8EDE3E8600E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EB79CCA25EAC4D100E47FA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CC925EAC4D100E47FA9 /* iOSAudio.app */,
+				1EB79CDF25EAC4D200E47FA9 /* iOSAudioTests.xctest */,
+				1EB79CEA25EAC4D200E47FA9 /* iOSAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EB79CCB25EAC4D100E47FA9 /* iOSAudio */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CCC25EAC4D100E47FA9 /* iOSAudioApp.swift */,
+				1E3C416925EB8C8D001161D7 /* Speech Manager */,
+				1E3C41B125EBAA01001161D7 /* Google Support Classes */,
+				1E3C428225EC0B8A001161D7 /* Custom Components */,
+				1E3C418325EB9B90001161D7 /* Features */,
+				1E3C421925EBD524001161D7 /* Networking */,
+				1E3C416525EB8BF0001161D7 /* Model */,
+				1EB79CD225EAC4D200E47FA9 /* Preview Content */,
+				1EB79CD025EAC4D200E47FA9 /* Assets.xcassets */,
+				1EB79CDA25EAC4D200E47FA9 /* Info.plist */,
+				1EB79D4625EAC65200E47FA9 /* iOSAudio-Bridging-Header.h */,
+			);
+			path = iOSAudio;
+			sourceTree = "<group>";
+		};
+		1EB79CD225EAC4D200E47FA9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CD325EAC4D200E47FA9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EB79CE225EAC4D200E47FA9 /* iOSAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CE325EAC4D200E47FA9 /* iOSAudioTests.swift */,
+				1EB79CE525EAC4D200E47FA9 /* Info.plist */,
+			);
+			path = iOSAudioTests;
+			sourceTree = "<group>";
+		};
+		1EB79CED25EAC4D200E47FA9 /* iOSAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CEE25EAC4D200E47FA9 /* iOSAudioUITests.swift */,
+				1EB79CF025EAC4D200E47FA9 /* Info.plist */,
+			);
+			path = iOSAudioUITests;
+			sourceTree = "<group>";
+		};
+		253701BD93417279FF288C98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B744741EF9E17258ED9DC986 /* Pods-iOSAudio.debug.xcconfig */,
+				04AA82F8FBB340C3AD58C8F9 /* Pods-iOSAudio.release.xcconfig */,
+				8EE38ADED737DC776DC3224C /* Pods-iOSAudio-iOSAudioUITests.debug.xcconfig */,
+				08C2CDAB2F3FF9CD43645715 /* Pods-iOSAudio-iOSAudioUITests.release.xcconfig */,
+				1CE300990C62EFF1D3370F76 /* Pods-iOSAudioTests.debug.xcconfig */,
+				AA42173226945C59A8FD0135 /* Pods-iOSAudioTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		469D956F587AD8EDE3E8600E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E62AEEDD232B7A3E5E27107 /* Pods_iOSAudio.framework */,
+				9A1D14575398CF3324A92392 /* Pods_iOSAudio_iOSAudioUITests.framework */,
+				66D071D0A3683A52C4D507B2 /* Pods_iOSAudioTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EB79CC825EAC4D100E47FA9 /* iOSAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB79CF325EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudio" */;
+			buildPhases = (
+				41F7063E03C7F941C40B02FD /* [CP] Check Pods Manifest.lock */,
+				1EB79CC525EAC4D100E47FA9 /* Sources */,
+				1EB79CC625EAC4D100E47FA9 /* Frameworks */,
+				1EB79CC725EAC4D100E47FA9 /* Resources */,
+				2F14E7E9C5562EC5E145F3A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSAudio;
+			productName = iOSAudio;
+			productReference = 1EB79CC925EAC4D100E47FA9 /* iOSAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EB79CDE25EAC4D200E47FA9 /* iOSAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB79CF625EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudioTests" */;
+			buildPhases = (
+				670CE7A9470EB50DDB3DEF58 /* [CP] Check Pods Manifest.lock */,
+				1EB79CDB25EAC4D200E47FA9 /* Sources */,
+				1EB79CDC25EAC4D200E47FA9 /* Frameworks */,
+				1EB79CDD25EAC4D200E47FA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EB79CE125EAC4D200E47FA9 /* PBXTargetDependency */,
+			);
+			name = iOSAudioTests;
+			productName = iOSAudioTests;
+			productReference = 1EB79CDF25EAC4D200E47FA9 /* iOSAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EB79CE925EAC4D200E47FA9 /* iOSAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB79CF925EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudioUITests" */;
+			buildPhases = (
+				7B2E73AE27335B6371C65B4F /* [CP] Check Pods Manifest.lock */,
+				1EB79CE625EAC4D200E47FA9 /* Sources */,
+				1EB79CE725EAC4D200E47FA9 /* Frameworks */,
+				1EB79CE825EAC4D200E47FA9 /* Resources */,
+				C0975A63A4D54CB1E73BA63F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EB79CEC25EAC4D200E47FA9 /* PBXTargetDependency */,
+			);
+			name = iOSAudioUITests;
+			productName = iOSAudioUITests;
+			productReference = 1EB79CEA25EAC4D200E47FA9 /* iOSAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EB79CC125EAC4D100E47FA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1EB79CC825EAC4D100E47FA9 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					1EB79CDE25EAC4D200E47FA9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1EB79CC825EAC4D100E47FA9;
+					};
+					1EB79CE925EAC4D200E47FA9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1EB79CC825EAC4D100E47FA9;
+					};
+				};
+			};
+			buildConfigurationList = 1EB79CC425EAC4D100E47FA9 /* Build configuration list for PBXProject "iOSAudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EB79CC025EAC4D100E47FA9;
+			productRefGroup = 1EB79CCA25EAC4D100E47FA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EB79CC825EAC4D100E47FA9 /* iOSAudio */,
+				1EB79CDE25EAC4D200E47FA9 /* iOSAudioTests */,
+				1EB79CE925EAC4D200E47FA9 /* iOSAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EB79CC725EAC4D100E47FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79CD425EAC4D200E47FA9 /* Preview Assets.xcassets in Resources */,
+				1EB79CD125EAC4D200E47FA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CDD25EAC4D200E47FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CE825EAC4D200E47FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F14E7E9C5562EC5E145F3A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAudio/Pods-iOSAudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAudio/Pods-iOSAudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSAudio/Pods-iOSAudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41F7063E03C7F941C40B02FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSAudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670CE7A9470EB50DDB3DEF58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSAudioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2E73AE27335B6371C65B4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSAudio-iOSAudioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0975A63A4D54CB1E73BA63F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAudio-iOSAudioUITests/Pods-iOSAudio-iOSAudioUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAudio-iOSAudioUITests/Pods-iOSAudio-iOSAudioUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSAudio-iOSAudioUITests/Pods-iOSAudio-iOSAudioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EB79CC525EAC4D100E47FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79E5D25EB057D00E47FA9 /* GoogleSpeechManager.swift in Sources */,
+				1E3C425A25EBDBAA001161D7 /* TimePoint.swift in Sources */,
+				1EB79E3625EAFF2000E47FA9 /* SpeechRecognitionService.swift in Sources */,
+				1EB79CCF25EAC4D100E47FA9 /* RecordView.swift in Sources */,
+				1E3C424A25EBDAB6001161D7 /* GoogleAPIServices.swift in Sources */,
+				1EB79D0025EAC4E300E47FA9 /* ActionButtonModifier.swift in Sources */,
+				1E3C427525EC00F0001161D7 /* TextWithAttributedString.swift in Sources */,
+				1E3C416E25EB8CDA001161D7 /* Transcription.swift in Sources */,
+				1E3C426025EBDC05001161D7 /* GetAudioFromTextOperation.swift in Sources */,
+				1E3C418A25EBA927001161D7 /* TextToSpeechService.swift in Sources */,
+				1E3C417325EB90AD001161D7 /* RecordViewModel.swift in Sources */,
+				1E3C424125EBD5AE001161D7 /* BaseOperation.swift in Sources */,
+				1EB79E1D25EAFF2000E47FA9 /* AudioController.swift in Sources */,
+				1E3C425225EBDB3E001161D7 /* AudioFromText.swift in Sources */,
+				1EB79CCD25EAC4D100E47FA9 /* iOSAudioApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CDB25EAC4D200E47FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79CE425EAC4D200E47FA9 /* iOSAudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79CE625EAC4D200E47FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79CEF25EAC4D200E47FA9 /* iOSAudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EB79CE125EAC4D200E47FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EB79CC825EAC4D100E47FA9 /* iOSAudio */;
+			targetProxy = 1EB79CE025EAC4D200E47FA9 /* PBXContainerItemProxy */;
+		};
+		1EB79CEC25EAC4D200E47FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EB79CC825EAC4D100E47FA9 /* iOSAudio */;
+			targetProxy = 1EB79CEB25EAC4D200E47FA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EB79CF125EAC4D200E47FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EB79CF225EAC4D200E47FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EB79CF425EAC4D200E47FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B744741EF9E17258ED9DC986 /* Pods-iOSAudio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSAudio/Preview Content\"";
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOSAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSAudio/iOSAudio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EB79CF525EAC4D200E47FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AA82F8FBB340C3AD58C8F9 /* Pods-iOSAudio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSAudio/Preview Content\"";
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOSAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSAudio/iOSAudio-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EB79CF725EAC4D200E47FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE300990C62EFF1D3370F76 /* Pods-iOSAudioTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				INFOPLIST_FILE = iOSAudioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAudio.app/iOSAudio";
+			};
+			name = Debug;
+		};
+		1EB79CF825EAC4D200E47FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA42173226945C59A8FD0135 /* Pods-iOSAudioTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				INFOPLIST_FILE = iOSAudioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAudio.app/iOSAudio";
+			};
+			name = Release;
+		};
+		1EB79CFA25EAC4D200E47FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE38ADED737DC776DC3224C /* Pods-iOSAudio-iOSAudioUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				INFOPLIST_FILE = iOSAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSAudio;
+			};
+			name = Debug;
+		};
+		1EB79CFB25EAC4D200E47FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C2CDAB2F3FF9CD43645715 /* Pods-iOSAudio-iOSAudioUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKY92Z3UR9;
+				INFOPLIST_FILE = iOSAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orfeas.iOSAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EB79CC425EAC4D100E47FA9 /* Build configuration list for PBXProject "iOSAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79CF125EAC4D200E47FA9 /* Debug */,
+				1EB79CF225EAC4D200E47FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EB79CF325EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79CF425EAC4D200E47FA9 /* Debug */,
+				1EB79CF525EAC4D200E47FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EB79CF625EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79CF725EAC4D200E47FA9 /* Debug */,
+				1EB79CF825EAC4D200E47FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EB79CF925EAC4D200E47FA9 /* Build configuration list for PBXNativeTarget "iOSAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79CFA25EAC4D200E47FA9 /* Debug */,
+				1EB79CFB25EAC4D200E47FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EB79CC125EAC4D100E47FA9 /* Project object */;
+}
